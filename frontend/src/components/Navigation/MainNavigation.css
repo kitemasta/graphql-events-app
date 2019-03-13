@@ -8,6 +8,7 @@
   padding: 0 1rem;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
 .main-navigation__logo h1 {
@@ -15,13 +16,11 @@
   font-size: 1.5rem;
 }
 
-.main-navigation__items {
-  margin-left: 1.5rem;
-}
-
 .main-navigation__items ul {
   list-style-type: none;
   margin: 0;
+  padding: 0;
+  padding-right: 2rem;
   display: flex;
 }
 
@@ -34,8 +33,19 @@
   color: #000;
 }
 
+.main-navigation__items button {
+  color: #000;
+  border: none;
+  font: inherit;
+  background: none;
+  padding: 0;
+  cursor: pointer;
+}
+
 .main-navigation__items a:hover,
 .main-navigation__items a:active,
-.main-navigation__items a.active {
+.main-navigation__items a.active,
+.main-navigation__items button:hover,
+.main-navigation__items button:active {
   color: #fff;
 }
